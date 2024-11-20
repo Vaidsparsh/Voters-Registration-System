@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Feedback Form - Voter Registration System</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img alt="Logo" src="logo.svg" />
+        </div>
+        <div class="title">
+            <span>मतदाता सेवा पोर्टल</span>
+            VOTERS SERVICE PORTAL
+        </div>
+        <div class="controls">
+            <button class="profile-icon">
+                <i class="fas fa-user-circle"></i>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <p>We value your feedback! Please fill out the form below.</p>
+        <form id="feedbackForm" onsubmit="submitFeedback(event)">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="" disabled selected>Select your rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <script src="feedback.js"></script>
+</body>
+</html>

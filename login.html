@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Login
+    </title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="left-section">
+        <img alt="Election Commission of India Logo" height="100" src="logo.svg" width="100" />
+        <h1>
+            भारत निर्वाचन आयोग
+        </h1>
+        <h2>
+            Election Commission of India
+        </h2>
+    </div>
+    <div class="right-section">
+        <div class="login-container">
+            <h2>
+                Login
+            </h2>
+            <p>
+                Do not have an account?
+                <a href="signup.html">
+                    Sign-Up
+                </a>
+            </p>
+
+            <form onsubmit="validateLogin(event)">
+                <label for="mobile">
+                    Registered Mobile No./Email ID
+                </label>
+                <input id="mobile" name="mobile" placeholder="Enter registered Mobile No./Email ID" type="text" />
+                <label for="password">
+                    Password *
+                </label>
+                <input id="password" name="password" placeholder="Enter Password" type="password" />
+                <input type="checkbox" id="showPassword" style="margin-left: 10px;" />
+                <label for="showPassword">Show Password</label>
+                <a href="#" style="float: right;">
+                    Forgot Password?
+                </a>
+                <div class="captcha-container">
+                    <img alt="Captcha Image" height="50" src="captcha.png" width="100" />
+                </div>
+                <label for="captcha">
+                    Captcha
+                </label>
+                <input id="captcha" name="captcha" placeholder="Enter Captcha" type="text" />
+                <div class="controls">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

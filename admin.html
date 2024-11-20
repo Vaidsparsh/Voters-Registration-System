@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Admin Panel - Registered Voters</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img alt="Logo" src="logo.svg" />
+        </div>
+        <div class="title">
+            <span>मतदाता सेवा पोर्टल</span>
+            VOTERS SERVICE PORTAL
+        </div>
+        <div class="controls">
+            <button class="profile-icon">
+                <i class="fas fa-user-circle"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Registered Voters</h1>
+        <table id="votersTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Date of Birth</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button id="clearData">Clear All Voters</button>
+    </div>
+    <script src="admin.js"></script>
+</body>
+
+</html>
